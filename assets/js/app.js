@@ -1,4 +1,4 @@
-var topics=["penguins", "hamsters", "rattlesnake", "penguin", "parrot", "puppies", "koala bears", "giraffes",  "french bulldog", "frogs", "orangutang", "lion", "anteater", "seal", "turtles"]
+var topics=["penguins", "hamsters", "rattlesnake", "camel", "parrot", "puppies", "koala bears", "giraffes",  "french bulldog", "frogs", "orangutang", "lion", "anteater", "seal", "turtles"]
 
 //Function to dynamically generate "starting buttons" from array
 //WORKING just need to add spaces, increase length of Array?
