@@ -6,7 +6,6 @@
    background-color:rgb(62, 222, 236);
     font-weight: 700;
    margin:10px;
-   font-style: oblique;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -15,9 +14,15 @@
     text-align:center;
     color:rgb(62, 222, 236);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top:15px;
-   border-width:3pt;
-   border-color:rgb(216, 236, 62);
+    
+}
+
+#heading2 {
+    background-color:rgb(182, 83, 147);
+    text-align:center;
+    color:rgb(216, 236, 62);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 #animalSearch {

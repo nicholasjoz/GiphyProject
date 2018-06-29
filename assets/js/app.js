@@ -1,4 +1,4 @@
-var topics=["turtles", "hamsters", "rattlesnake", "penguin", "parrot", "puppies", "kitties", "giraffes",  "french bulldog", "frogs", "orangutang", "lion", "anteater", "seal", "penguin"]
+var topics=["penguins", "hamsters", "rattlesnake", "penguin", "parrot", "puppies", "koala bears", "giraffes",  "french bulldog", "frogs", "orangutang", "lion", "anteater", "seal", "turtles"]
 
 //Function to dynamically generate "starting buttons" from array
 //WORKING just need to add spaces, increase length of Array?
@@ -79,20 +79,19 @@ function getGifs() {
     var state = $(this).attr("data-state");
     // var state = $(this).attr("data-state");
     if (state === "still") {
-        // attempt to 'fix' this line below to show image should be animated gif
         var animating = $(this).attr("data-gif-animate");
         console.log(animating);
       $(this).attr("src", animating);
       $(this).attr("data-state", "animate");
     } else {
-        // line below supposed to set image source to still image when 'still'
         var stillstate = $(this).attr("data-gif-still");
       $(this).attr("src", stillstate);
       $(this).attr("data-state", "still");
     }
   };
 
-  // function given by tutor , was going to use until I got my own function (line 78) working
+  // function below given by tutor , was going to use until I got my own function (line 78) working
+  // not using this / calling upon it, but keeping it in here because I want to learn it  and study it more
   function startGif() {
     var src = $(this).attr("src");
     if($(this).hasClass('playing')){
