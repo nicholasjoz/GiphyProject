@@ -7,8 +7,8 @@ function renderButtons(){
     for (var i=0; i<topics.length; i++) {
         var an= $("<button>");
         an.addClass("animals");
-        an.attr("data-name", topics[i]);
-        an.text(topics[i]);
+        an.attr("data-name", topics[i].toUpperCase());
+        an.text(topics[i].toUpperCase());
         $("#animalButtons").append(an);
 
     }
@@ -21,7 +21,7 @@ function renderButtons(){
 $("#addAnimal").on("click", function(event) {
     event.preventDefault();
     var newAnimal= $("#animal-input").val().trim();
-    topics.push(newAnimal);
+    topics.push(newAnimal.toUpperCase());
     renderButtons()
 })
 
@@ -56,9 +56,9 @@ function getGifs() {
 
           var animalImage = $("<img>");
           animalImage.attr("src", results[i].images.fixed_height_still.url);
-
-          gifDiv.prepend(p);
-          gifDiv.prepend(animalImage);
+// change to prepend if you want ratings after the gif
+          gifDiv.append(p);
+          gifDiv.append(animalImage);
 
           $("#animals").prepend(gifDiv);
 // attempt to have gifs start as "still"
@@ -92,7 +92,7 @@ function getGifs() {
     }
   };
 
-  // take source and replace end with 
+  // function given by tutor , was going to use until I got my own function (line 78) working
   function startGif() {
     var src = $(this).attr("src");
     if($(this).hasClass('playing')){
